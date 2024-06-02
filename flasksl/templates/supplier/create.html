@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Create Supplier{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="name">Supplier Name</label>
+    <input name="name" id="name" required>
+    <label for="contact_number">Contact Number</label>
+    <input type="number" name="contact_number" id="contact_number" required>
+    <label for="discount">Discount</label>
+    <input type="number" name="discount" id="discount" required>
+    <label for="place">Place</label>
+    <input name="place" id="place" required>
+    <input type="submit" value="Create">
+  </form>
+{% endblock %}
